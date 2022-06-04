@@ -1,0 +1,8 @@
+{
+    "name": "Item Pills",
+    "description": "TBD",
+    "version": "1.0.0",
+    "author": "LuckFire",
+    "theme": "./src/source.scss",
+    "license": "MIT"
+}

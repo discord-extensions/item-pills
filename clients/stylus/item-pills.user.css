@@ -1,0 +1,39 @@
+@-moz-document domain("discord.com") {
+    /* ==UserStyle==
+    @name         Item Pills
+    @description  TBD.
+    @author       LuckFire
+    @namespace    https://github.com/discord-extensions/item-pills
+    @version      1.0.0
+    ==/UserStyle== */
+
+    @import url('https://discord-extensions.github.io/item-pills/src/source.css');
+
+    :root {
+        --IP-container-rounding: 6px;
+        --IP-pill-default-height: 20px;
+        --IP-pill-unread-height: 4px;
+        --IP-pill-hover-height: 14px;
+        --IP-pill-separation-left: 5px;
+        --IP-pill-separation-right: calc(var(--IP-pill-separation-left) + 2px);
+        --IP-pill-transition-delay: 250ms ease;
+    }
+    
+    .theme-dark {
+        --IP-container-selected: rgb(255, 255, 255, 0.075);
+        --IP-container-hover: rgb(255, 255, 255, 0.025);
+        --IP-container-active: rgba(255, 255, 255, 0.05);
+        --IP-pill-default: #5965F2;
+        --IP-pill-unread: #F2B259;
+        --IP-pill-connected: #59F2BF;
+    }
+    
+    .theme-light {
+        --IP-container-selected: rgb(0, 0, 0, 0.075);
+        --IP-container-hover: rgb(0, 0, 0, 0.025);
+        --IP-container-active: rgba(0, 0, 0, 0.05);
+        --IP-pill-default: #5865f2;
+        --IP-pill-unread: #EC9213;
+        --IP-pill-connected: #11D493;
+    }
+}

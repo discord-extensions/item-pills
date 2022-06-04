@@ -1,0 +1,100 @@
+.sidebar-1tnWFu {
+    // || Server Channels
+    .containerDefault-YUSmu3, .containerDragBefore-1s5Qg6 {
+        overflow: hidden;
+        .content-1gYQeQ {
+            padding-left: 0;
+            border-radius: var(--IP-container-rounding);
+            &::before {
+                content: '';
+                position: relative;
+                width: 4px;
+                height: 0;
+                margin-left: var(--IP-pill-separation-left);
+                border-radius: 25px;
+                transition: height var(--IP-pill-transition-delay), margin var(--IP-pill-transition-delay), background-color var(--IP-pill-transition-delay);
+            }
+            &:hover {
+                background-color: var(--IP-container-hover);
+                &::before {
+                    height: var(--IP-pill-hover-height);
+                    margin-right: var(--IP-pill-separation-right);
+                    background-color: var(--IP-pill-default);
+                }
+            }
+            &:active {
+                background-color: var(--IP-container-active);
+            }
+        }
+        .modeSelected-3DmyhH, .modeUnread-3Cxepe, .modeConnected-NrO4cP {
+            .content-1gYQeQ::before {
+                margin-right: var(--IP-pill-separation-right);
+            }
+        }
+        .modeSelected-3DmyhH .content-1gYQeQ {
+            background-color: var(--IP-container-selected);
+            &::before {
+                height: var(--IP-pill-default-height);
+                background-color: var(--IP-pill-default);
+            }
+        }
+        .modeUnread-3Cxepe {
+            .unreadRelevant-2f-VSK {
+                display: none;
+            }
+            .content-1gYQeQ {
+                &::before {
+                    height: var(--IP-pill-unread-height);
+                    background-color: var(--IP-pill-unread);
+                }
+                &:hover::before {
+                    height: var(--IP-pill-hover-height);
+                }
+            }
+        }
+        .modeConnected-NrO4cP .content-1gYQeQ {
+            background-color: var(--IP-container-active);
+            &::before {
+                height: var(--IP-pill-default-height);
+                background-color: var(--IP-pill-connected);
+            }
+        }
+    }
+    // || Private Message Channels
+    .container-32HW5s {
+        overflow: hidden;
+        .interactive-1vLZ_I {
+            &::before {
+                content: '';
+                position: relative;
+                width: 4px;
+                height: 0;
+                margin-left: var(--IP-pill-separation-left);
+                border-radius: 25px;
+                transition: height var(--IP-pill-transition-delay), margin var(--IP-pill-transition-delay);
+            }
+            &:hover {
+                background-color: var(--IP-container-hover);
+                &::before {
+                    height: var(--IP-pill-hover-height);
+                    margin-right: var(--IP-pill-separation-right);
+                    background-color: var(--IP-pill-default);
+                }
+            }
+            &:active {
+                background-color: var(--IP-container-active);
+            }
+            &.interactiveSelected-29CP8y {
+                background-color: var(--IP-container-selected);
+                &::before {
+                    height: var(--IP-pill-default-height);
+                    margin-right: var(--IP-pill-separation-right);
+                    background-color: var(--IP-pill-default);
+                }
+            }
+            .layout-1LjVue {
+                padding: 0;
+            }
+        }
+    }
+}
