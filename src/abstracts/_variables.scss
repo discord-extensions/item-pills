@@ -1,0 +1,18 @@
+:root {
+    --container-rounding: 6px;
+    --pill-default-height: 20px;
+    --pill-unread-height: 4px;
+    --pill-hover-height: 14px;
+}
+
+.theme-dark {
+    --pill-default-background: hsl(235, calc(var(--saturation-factor,1)*85%), 65%);
+    --pill-unread-background: hsl(35, calc(var(--saturation-factor,1)*85%), 65%);
+    --pill-connected-background: hsl(160, calc(var(--saturation-factor,1)*85%), 65%);
+}
+
+.theme-light {
+    --pill-default-background: hsl(235, calc(var(--saturation-factor,1)*85%), 65%);
+    --pill-unread-background: hsl(35, calc(var(--saturation-factor,1)*85%), 50%);
+    --pill-connected-background: hsl(160, calc(var(--saturation-factor,1)*85%), 45%);
+}

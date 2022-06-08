@@ -1,0 +1,22 @@
+@import '../abstracts/mixins';
+
+/* || Friends */
+.peopleListItem-u6dGxF {
+    .userInfo-2WpsYG {
+        align-items: center;
+        &::before {
+            @include item-pill-main;
+        }
+    }
+    &:hover .userInfo-2WpsYG::before {
+        height: var(--pill-hover-height);
+        margin-right: 7px;
+    }
+    &.active-2UF8Zh, 
+    &:active {
+        .userInfo-2WpsYG::before {
+            height: var(--pill-default-height);
+            margin-right: 7px;
+        }
+    }
+}

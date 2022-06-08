@@ -1,0 +1,22 @@
+@import '../abstracts/mixins';
+
+.listRow-2nO1T6 {
+    padding-left: 0;
+    &::before {
+        @include item-pill-main;
+    }
+    &:hover {
+        background-color: var(--background-modifier-hover);
+        &::before {
+            height: var(--pill-hover-height);
+            margin-right: 7px;
+        }
+    }
+    &:active {
+        background-color: var(--background-modifier-active);
+        &::before {
+            height: var(--pill-default-height);
+            margin-right: 7px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import '../abstracts/mixins';
+
+/* || Autocomplete */
+.autocomplete-3NRXG8 {
+    .autocompleteRow-14iwvH {
+        div.base-2v-uc0 {
+            display: flex;
+            align-items: center;
+            padding-left: 0;
+            border-radius: var(--container-rounding);
+            &::before {
+                @include item-pill-main;
+            }
+            &:active {
+                background-color: var(--background-modifier-active);
+                &::before {
+                    height: var(--pill-default-height);
+                    margin-right: 7px;
+                }
+            }
+            .autocompleteRowContent-1cjfD2 {
+                width: 100%;
+            }
+        }
+        &:hover .base-2v-uc0 {
+            background-color: var(--background-modifier-hover);
+            &::before {
+                height: var(--pill-hover-height);
+                margin-right: 7px;
+            }
+        }
+        &[aria-selected="true"] .base-2v-uc0::before {
+            height: var(--pill-default-height);
+            margin-right: 7px;
+        }
+    }
+}

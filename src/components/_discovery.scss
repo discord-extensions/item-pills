@@ -1,33 +1,29 @@
+@import '../abstracts/mixins';
+
+/* || Discovery */
 .categoryItem-Kc_HK_ {
     .itemInner-3e_4G4 {
         padding-left: 0;
-        margin-left: 8px;
         &::before {
-            content: '';
-            position: relative;
-            width: 4px;
-            height: 0;
-            margin-left: var(--IP-pill-separation-left);
-            border-radius: 25px;
-            transition: height var(--IP-pill-transition-delay), margin var(--IP-pill-transition-delay);
+            @include item-pill-main;
         }
-        &:hover {
-            &::before {
-                height: var(--IP-pill-hover-height);
-                margin-right: var(--IP-pill-separation-right);
-                background-color: var(--IP-pill-default);
-            }
+        &:hover::before {
+            height: var(--pill-hover-height);
+            margin-right: 7px;
         }
-        .avatar-6qzftW {
-            margin-left: -6px;
+        &:active::before {
+            height: var(--pill-default-height);
+            margin-right: 7px;
         }
     }
-    &.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
-        background-color: var(--IP-container-selected);
+    &.selectedCategoryItem-ZjqSui div.itemInner-3e_4G4 {
+        background-color: var(--background-modifier-selected);
         &::before {
-            height: var(--IP-pill-default-height);
-            margin-right: var(--IP-pill-separation-right);
-            background-color: var(--IP-pill-default);
+            height: var(--pill-default-height);
+            margin-right: 7px;
         }
+    }
+    &:active .itemInner-3e_4G4 {
+        background-color: var(--background-modifier-active);
     }
 }

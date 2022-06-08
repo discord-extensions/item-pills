@@ -1,0 +1,10 @@
+@mixin item-pill-main {
+    content: '';
+    position: relative;
+    min-width: 4px;
+    height: 0;
+    margin-left: 5px;
+    border-radius: 25px;
+    transition: all 250ms ease;
+    background-color: var(--pill-default-background);
+}

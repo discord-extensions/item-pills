@@ -1,6 +1,10 @@
-@use './base/variables';
+@use './abstracts/variables';
 
+@use './components/autocomplete';
 @use './components/channels';
 @use './components/discovery';
+@use './components/friends';
+@use './components/items';
 @use './components/members';
-@use './components/settings';
+@use './components/user-modal';
+@use './components/voice';

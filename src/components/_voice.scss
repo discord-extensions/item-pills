@@ -1,9 +1,8 @@
 @import '../abstracts/mixins';
 
-/* || Members */
-.member-2gU6Ar {
-    .layout-1qmrhw {
-        padding-left: 0;
+.list-2kKmFw {
+    .content-1Tgc42 {
+        margin: 0;
         &::before {
             @include item-pill-main;
         }
@@ -15,8 +14,11 @@
             height: var(--pill-default-height);
             margin-right: 7px;
         }
+        .avatarContainer-3FF_Km {
+            margin-left: 0;
+        }
     }
-    &[aria-expanded="true"] .layout-1qmrhw::before {
+    .selected-1oxcpH .content-1Tgc42::before {
         height: var(--pill-default-height);
         margin-right: 7px;
     }

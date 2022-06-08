@@ -1,0 +1,30 @@
+@import '../abstracts/mixins';
+
+#app-mount .item-3XjbnG:not(.tabBarItem-30Te4-) {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    &::before {
+        @include item-pill-main;
+    }
+    &:hover::before {
+        height: var(--pill-hover-height);
+        margin-right: 7px;
+    }
+    &[aria-selected="true"],
+    &:active {
+        &::before {
+            height: var(--pill-default-height);
+            margin-right: 7px;
+        }
+    }
+    &.item-3mHhwr {
+        height: 30px;
+    }
+    .premiumLabel-3HPvdB {
+        width: 100%;
+    }
+    .selectedBackground-1t6xXq {
+        background-color: transparent;
+    }
+}
