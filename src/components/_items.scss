@@ -23,6 +23,13 @@
     }
     .premiumLabel-3HPvdB {
         width: 100%;
+        > svg {
+            right: 0;
+        }
+    }
+    svg {
+        position: absolute;
+        right: 10px;
     }
     .selectedBackground-1t6xXq {
         background-color: transparent;
